@@ -96,3 +96,20 @@ ul li:hover .overlay-imagem-link{
 
     opacity: 1;
 }
+
+ul li .botao-excluir {
+    position: absolute;
+    bottom: 10px; /* Ajuste conforme necessário */
+    right: 10px; /* Ajuste conforme necessário */
+    background-color: #ff6b6b; /* Cor de fundo para o botão */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 5px 10px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor em formato de ponteiro */
+    opacity: 0; /* Inicialmente invisível */
+    transition: all ease .5s; /* Transição suave para a visibilidade */
+}
+
+ul li:hover .botao-excluir {
+    opacity: 1; /* Torna visível quando o item da lista é passado pelo mouse */
+}

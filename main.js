@@ -31,10 +31,19 @@ $(document).ready(function() {
             
         `).appendTo(novoItem);
 
+        $('<button class="botao-excluir">Excluir</button>').appendTo(novoItem);
+
+
         $(novoItem).appendTo('ul');
         $(novoItem).fadeIn();
 
         $('#endereço-imagem-nova').val(' ');
     })
+
+    $('ul').on('click', '.botao-excluir', function() {
+        $(this).closest('li').fadeOut(function(){
+            $(this).remove();
+        });
+    });
 
 })
